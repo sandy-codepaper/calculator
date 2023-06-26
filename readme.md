@@ -34,19 +34,13 @@ require "./vendor/autoload.php";
 
 Here's an example of how you can use the package to calculate the value:
 
-```php
-try {
-      public function testMultiplication()
-    {
-        $calculator = new Calculator();
-        
-        $result = $calculator->multiply(4, 2);
-        
-        $this->assertEquals(8, $result);
-    }
-} catch (\Exception $e) {
-    echo $e->getMessage();
-}
+```php  
+
+$calc = new Calculator;
+
+$sum = $calc->add(1, 2);
+
+print $sum;
 ```
 
 
